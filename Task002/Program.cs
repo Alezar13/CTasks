@@ -9,7 +9,6 @@ Console.Write("ВВедите число 3=>");
 String Inputed3 = Console.ReadLine();
 int C = Convert.ToInt32(Inputed3);
 int max = A;
-if (A > B) max = A;
 if (B > A) max = B;
 if (C > B) max = C;
 Console.Write ("max =");
