@@ -10,7 +10,7 @@ return res;
 UInt64 num = Prompt("Введите число =>");
 UInt64 left = num;
 UInt64 rev = 0;
-while(Convert.ToBoolean(left)) 
+while(left > 0) 
 {
    UInt64 r = left % 10;   
    rev = rev * 10 + r;

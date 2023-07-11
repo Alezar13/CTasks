@@ -1,5 +1,4 @@
-﻿// Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-Console.Clear();
+﻿Console.Clear();
 int Prompt (string message)
 {
 Console.Write(message);
@@ -27,17 +26,14 @@ void PrintArray(int[] array)
     System.Console.Write($"{array[array.Length - 1]}");
     System.Console.WriteLine("]");
 }
-int count = 0;
 int Length = Prompt ("Длина массива:");
-int min = 100;
-int max = 999;
+int min = Prompt ("Начальное значение, для диапазона случайного числа:");
+int max = Prompt ("Конечное значение, для диапазона случайного числа:");
+int sum = 0;
 int[] array = GenerateArray (Length, min, max);
-for (int i = 0; i < Length; i++)
-            {
-            
-                if ((array[i] % 2) == 0)
-                count++;
-            }
+for (int i = 1; i < Length; i+=2)
+{
+    sum += array[i];
+}
  PrintArray(array);
- System.Console.WriteLine($"Количество четных чисел {count}");
-        
+ System.Console.WriteLine($"Сумма нечетных индексов массива равна {sum}");
