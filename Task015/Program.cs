@@ -36,4 +36,4 @@ for (int i = 1; i < len; i+=2)
     sum += array[i];
 }
  PrintArray(array);
- System.Console.WriteLine($"Сумма нечетных индексов массива равна {sum}");
+ System.Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях массива равна {sum}");
