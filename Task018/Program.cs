@@ -32,7 +32,7 @@ double[] FindCoords(double[] lineData1, double[] lineData2)
 {
     double[] coord = new double[2];
     coord[X_COORD] = (lineData1[con] - lineData2[con]) / (lineData2[cof] - lineData1[cof]);
-    coord[Y_COORD] = lineData1[con] * coord[X_COORD] + lineData1[con];
+    coord[Y_COORD] = lineData1[cof] * coord[X_COORD] + lineData1[con];
     return coord;
 }
 bool ValidateLines(double[] lineData1, double[] lineData2)
