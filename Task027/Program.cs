@@ -2,12 +2,10 @@
 Console.Clear ();
 Console.Write("Введите число M: ");
 int m = Convert.ToInt32(Console.ReadLine());
-
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-
-SumFromMToN(m, n);
-void SumFromMToN(int m, int n)
+SumElements(m, n);
+void SumElements(int m, int n)
 {
     System.Console.Write($"Сумма натуральных элементов: {SumMN(m - 1, n)}");
 }
